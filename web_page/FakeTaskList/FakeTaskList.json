@@ -1,0 +1,205 @@
+{
+  "modelVersion" : "2.3",
+  "id" : "FakeTaskList",
+  "name" : "FakeTaskList",
+  "lastUpdate" : 1687204297166,
+  "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "c675c158-51e0-4be4-bf7c-1595c54b662b",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 6,
+                "lg" : 6
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "label" : {
+                  "type" : "interpolation",
+                  "value" : "Default label"
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{loggedUser.user_name}}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                }
+              },
+              "reference" : "ee79899e-c0fd-4e18-acfd-6510d0246c8b",
+              "hasValidationError" : false,
+              "id" : "pbText"
+            },
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 6,
+                "lg" : 6
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "Link"
+                },
+                "type" : {
+                  "type" : "constant",
+                  "value" : "task"
+                },
+                "targetUrl" : {
+                  "type" : "constant",
+                  "value" : "http://"
+                },
+                "pageToken" : {
+                  "type" : "constant"
+                },
+                "processName" : {
+                  "type" : "constant"
+                },
+                "processVersion" : {
+                  "type" : "constant"
+                },
+                "taskId" : {
+                  "type" : "constant",
+                  "value" : "1"
+                },
+                "caseId" : {
+                  "type" : "constant"
+                },
+                "target" : {
+                  "type" : "constant",
+                  "value" : "_self"
+                },
+                "appToken" : {
+                  "type" : "constant"
+                },
+                "urlParams" : {
+                  "type" : "constant"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                },
+                "buttonStyle" : {
+                  "type" : "constant",
+                  "value" : "link"
+                }
+              },
+              "reference" : "722728e3-558b-4cd9-a612-a112a84b94d9",
+              "hasValidationError" : false,
+              "id" : "pbLink"
+            }
+          ]
+        ]
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "6b3899b5-228a-4690-99a9-9e83ccf745f5",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "e4950ac3-9330-436e-9404-383b422c3fcd",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "loggedUser" : {
+      "type" : "url",
+      "value" : [
+        "../API/system/session/1"
+      ],
+      "exposed" : false
+    },
+    "user" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user?p=0&c=30&o=lastname%20ASC&f=enabled%3dtrue&s={{loggedUser.user_name}}&d=professional_data&d=manager_id"
+      ],
+      "exposed" : false
+    },
+    "taskList" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/humanTask?p=0&c=20&f=assigned_id={{user[0].id}}"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "34b7fecd-4086-456c-a41c-b4b281e13601",
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
+}

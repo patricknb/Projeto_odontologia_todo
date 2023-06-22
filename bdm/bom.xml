@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.14.0">
+    <businessObjects>
+        <businessObject qualifiedName="com.odontologia_ufsc.model.Agendamento">
+            <fields>
+                <field type="STRING" length="255" name="cpf" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="aTriagem" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="aConsulta" nullable="true" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="dataTriagem" nullable="true" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="dataConsulta" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="presencaTriagem" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="presencaConsulta" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.odontologia_ufsc.model.Alunos">
+            <fields>
+                <field type="INTEGER" length="255" name="matricula" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="nome" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="email" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="disciplinas" nullable="true" collection="true">
+                    <description>uma lista de disciplinas que o aluno está cursando?</description>
+                </field>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.odontologia_ufsc.model.Emprestimo">
+            <fields>
+                <field type="INTEGER" length="255" name="matricula" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="codProntuario" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.odontologia_ufsc.model.Pacientes">
+            <fields>
+                <field type="STRING" length="11" name="cpf" nullable="false" collection="false">
+                    <description>O CPF(cadastro de pessoa fisíca) é um número de indentificação individual atribuído a cada cidadão brasileiro. Ele serve para identificar de forma única uma pessoa perante orgãos governamentais, empresas e instituições financeiras.</description>
+                </field>
+                <field type="STRING" length="255" name="nome" nullable="false" collection="false">
+                    <description>Nome completo do paciente.</description>
+                </field>
+                <field type="STRING" length="16" name="telefone1" nullable="false" collection="false">
+                    <description>Número de telefone(fixo ou celular).</description>
+                </field>
+                <field type="STRING" length="16" name="telefone2" nullable="true" collection="false">
+                    <description>Número de telefone(fixo ou celular) alternativo(Opcional).</description>
+                </field>
+                <field type="LOCALDATE" length="255" name="dataNasc" nullable="false" collection="false">
+                    <description>Data de nascimento do paciente.</description>
+                </field>
+                <field type="STRING" length="15" name="cartaoSus" nullable="false" collection="false">
+                    <description>Número referente ao cartão SUS do paciente, utilizado para acessar serviços públicos de saúde.</description>
+                </field>
+                <field type="STRING" length="16" name="raca" nullable="false" collection="false">
+                    <description>Identificação racial ou étinica, auto-declarada, de uma pessoa.</description>
+                </field>
+                <field type="STRING" length="16" name="sexo" nullable="false" collection="false">
+                    <description>Gênero biológico de uma pessoa(feminino, masculino).</description>
+                </field>
+                <field type="STRING" length="64" name="nacionalidade" nullable="false" collection="false">
+                    <description>Nacionalidade de uma pessoa, indicando o pais em que ela nasceu.</description>
+                </field>
+                <field type="STRING" length="255" name="rua" nullable="false" collection="false">
+                    <description>Rua do paciente.</description>
+                </field>
+                <field type="STRING" length="255" name="bairro" nullable="false" collection="false">
+                    <description>Bairro do paciente.</description>
+                </field>
+                <field type="STRING" length="255" name="numeroResidencia" nullable="false" collection="false">
+                    <description>Numero da residencia do paciente.</description>
+                </field>
+                <field type="STRING" length="64" name="cidade" nullable="false" collection="false">
+                    <description>Cidade onde paciente reside</description>
+                </field>
+                <field type="STRING" length="64" name="unidadeFederal" nullable="false" collection="false">
+                    <description>Unidade federal, ou estado, onde o paciente reside.</description>
+                </field>
+                <field type="STRING" length="64" name="cep" nullable="false" collection="false">
+                    <description>Código de endereçamento postal.</description>
+                </field>
+                <field type="INTEGER" length="255" name="codProntuario" nullable="true" collection="false"/>
+                <field type="STRING" length="64" name="prefHorario" nullable="false" collection="false">
+                    <description>Horarios que o paciente possui disponibilidade de atendimento(manhã, tarde, manhã/tarde).</description>
+                </field>
+                <field type="INTEGER" length="255" name="faltas" nullable="true" collection="false">
+                    <description>Faltas registradas do paciente.</description>
+                </field>
+                <field type="STRING" length="64" name="situacaoAtendimento" nullable="true" collection="false">
+                    <description>Situação do paciente diante tratamento(Alta, Espera de Triagem, Triado, Desistência, Sem Contato,Referencia,ContraReferencia).</description>
+                </field>
+                <field type="STRING" length="16" name="estomatologia" nullable="true" collection="false">
+                    <description>esAc ou esBio</description>
+                </field>
+                <field type="STRING" length="16" name="dentistica" nullable="true" collection="false">
+                    <description>de1 ou de2</description>
+                </field>
+                <field type="STRING" length="16" name="cirurgia" nullable="true" collection="false">
+                    <description>ci1 ou ci2</description>
+                </field>
+                <field type="STRING" length="16" name="periodontia" nullable="true" collection="false">
+                    <description>pe0 ou peNt ou peCi ou peTr</description>
+                </field>
+                <field type="STRING" length="16" name="endodontia" nullable="true" collection="false">
+                    <description>en1 ou en2</description>
+                </field>
+                <field type="STRING" length="16" name="protese" nullable="true" collection="false">
+                    <description>pt ou ppr ou fixa ou pti ou placa</description>
+                </field>
+                <field type="BOOLEAN" length="255" name="permissaoAlterar" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.odontologia_ufsc.model.Prontuarios">
+            <fields>
+                <field type="INTEGER" length="255" name="codProntuario" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="estadoProntuario" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="atual_responsavel" nullable="true" collection="false">
+                    <description>matricula do aluno que pegou o prontuário emprestado e atualmente é responsável por ele.
+0 - ninguém
+mátricula - aluno</description>
+                </field>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>

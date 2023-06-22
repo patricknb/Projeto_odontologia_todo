@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="UFSC">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="Ricardo.Armini.Caldas">
+      <firstName>Ricardo</firstName>
+      <lastName>Armini Caldas</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Paula.Braga">
+      <firstName>Paula</firstName>
+      <lastName>Braga</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Henrique.Lopes">
+      <firstName>Henrique</firstName>
+      <lastName>Lopes</lastName>
+      <jobTitle></jobTitle>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Thalisson.Saymo.de.Oliveira.Silva">
+      <firstName>Thalisson</firstName>
+      <lastName>Saymo de Oliveira Silva</lastName>
+      <personalData/>
+      <professionalData>
+        <email>thalisson.saymo@ufsc.br</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Aluno.T1">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Aluno.T2">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Aluno.T3">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Fernanda.Dias">
+      <firstName>Fernanda</firstName>
+      <lastName>Dias</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Ana.Clara">
+      <firstName>Ana</firstName>
+      <lastName>Clara</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Cesar.Augusto.Magalhães.Benfatti">
+      <firstName>Cesar</firstName>
+      <lastName>Augusto Magalhães Benfatti</lastName>
+      <personalData/>
+      <professionalData>
+        <email>cesar.benfatti@ufsc.br </email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Adm">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">adm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="ChefeSetor">
+      <displayName>Chefe de Setor</displayName>
+    </role>
+    <role name="TécnicoAdministrativo">
+      <displayName>Técnico Administrativo</displayName>
+    </role>
+    <role name="Aluno">
+      <displayName>Aluno</displayName>
+    </role>
+    <role name="Professor">
+      <displayName>Professor</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="OdontoUFSC">
+      <displayName>Departamento de Odontologia UFSC</displayName>
+    </group>
+    <group name="SeRCaP" parentPath="/OdontoUFSC">
+      <displayName>SeRCaP</displayName>
+    </group>
+    <group name="SetorProntuarios" parentPath="/OdontoUFSC">
+      <displayName>Setor de Prontuários</displayName>
+    </group>
+    <group name="Graduação" parentPath="/OdontoUFSC">
+      <displayName>Graduação</displayName>
+    </group>
+    <group name="ChefeDepartamento" parentPath="/OdontoUFSC">
+      <displayName>Chefe de Departamento</displayName>
+    </group>
+    <group name="SubchefeDepartamento" parentPath="/OdontoUFSC">
+      <displayName>Subchefe de Departamento</displayName>
+    </group>
+    <group name="EquipeTriagem" parentPath="/OdontoUFSC">
+      <displayName>Equipe Triagem</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>Ricardo.Armini.Caldas</userName>
+      <roleName>Professor</roleName>
+      <groupName>Graduação</groupName>
+      <groupParentPath>/OdontoUFSC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Paula.Braga</userName>
+      <roleName>ChefeSetor</roleName>
+      <groupName>SeRCaP</groupName>
+      <groupParentPath>/OdontoUFSC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Henrique.Lopes</userName>
+      <roleName>TécnicoAdministrativo</roleName>
+      <groupName>SeRCaP</groupName>
+      <groupParentPath>/OdontoUFSC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Thalisson.Saymo.de.Oliveira.Silva</userName>
+      <roleName>Professor</roleName>
+      <groupName>SubchefeDepartamento</groupName>
+      <groupParentPath>/OdontoUFSC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Aluno.T1</userName>
+      <roleName>Aluno</roleName>
+      <groupName>Graduação</groupName>
+      <groupParentPath>/OdontoUFSC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Aluno.T2</userName>
+      <roleName>Aluno</roleName>
+      <groupName>Graduação</groupName>
+      <groupParentPath>/OdontoUFSC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Aluno.T3</userName>
+      <roleName>Aluno</roleName>
+      <groupName>Graduação</groupName>
+      <groupParentPath>/OdontoUFSC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Fernanda.Dias</userName>
+      <roleName>ChefeSetor</roleName>
+      <groupName>SetorProntuarios</groupName>
+      <groupParentPath>/OdontoUFSC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Ana.Clara</userName>
+      <roleName>TécnicoAdministrativo</roleName>
+      <groupName>SetorProntuarios</groupName>
+      <groupParentPath>/OdontoUFSC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Cesar.Augusto.Magalhães.Benfatti</userName>
+      <roleName>ChefeSetor</roleName>
+      <groupName>OdontoUFSC</groupName>
+    </membership>
+    <membership>
+      <userName>Adm</userName>
+      <roleName>ChefeSetor</roleName>
+      <groupName>SeRCaP</groupName>
+      <groupParentPath>/OdontoUFSC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Adm</userName>
+      <roleName>TécnicoAdministrativo</roleName>
+      <groupName>SeRCaP</groupName>
+      <groupParentPath>/OdontoUFSC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Adm</userName>
+      <roleName>ChefeSetor</roleName>
+      <groupName>SetorProntuarios</groupName>
+      <groupParentPath>/OdontoUFSC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Adm</userName>
+      <roleName>TécnicoAdministrativo</roleName>
+      <groupName>SetorProntuarios</groupName>
+      <groupParentPath>/OdontoUFSC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Adm</userName>
+      <roleName>Professor</roleName>
+      <groupName>Graduação</groupName>
+      <groupParentPath>/OdontoUFSC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Adm</userName>
+      <roleName>Aluno</roleName>
+      <groupName>Graduação</groupName>
+      <groupParentPath>/OdontoUFSC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Adm</userName>
+      <roleName>Professor</roleName>
+      <groupName>EquipeTriagem</groupName>
+      <groupParentPath>/OdontoUFSC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Adm</userName>
+      <roleName>Aluno</roleName>
+      <groupName>EquipeTriagem</groupName>
+      <groupParentPath>/OdontoUFSC</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>
