@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "CadastroDePacienteForm",
   "name" : "CadastroDePacienteForm",
-  "lastUpdate" : 1687207668122,
+  "lastUpdate" : 1687465673431,
   "rows" : [
     [
       {
@@ -413,6 +413,48 @@
                     {
                       "type" : "component",
                       "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 4,
+                        "lg" : 4
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Tem WhatsApp?"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "whatsapp"
+                        }
+                      },
+                      "reference" : "896bc7cc-6217-4f73-bc25-30b7834875d6",
+                      "hasValidationError" : false,
+                      "id" : "pbCheckbox"
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
                         "md" : 4,
                         "sm" : 12,
                         "xs" : 12,
@@ -424,8 +466,8 @@
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "!whatsapp"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -445,7 +487,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Telefone(primeira opção)"
+                          "value" : "Telefone c/ whatsapp"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -464,7 +506,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -529,7 +571,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Telefone(segunda opção)"
+                          "value" : "Telefone"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -1699,6 +1741,13 @@
         "return {",
         "\tpacienteInput: $data.formInput.pacienteInput",
         "}"
+      ],
+      "exposed" : false
+    },
+    "whatsapp" : {
+      "type" : "expression",
+      "value" : [
+        "return false"
       ],
       "exposed" : false
     }

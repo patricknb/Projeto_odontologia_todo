@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "AgendamentoConsultaForm",
   "name" : "AgendamentoConsultaForm",
-  "lastUpdate" : 1686886133337,
+  "lastUpdate" : 1687465760524,
   "rows" : [
     [
       {
@@ -415,7 +415,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Telefone1"
+                          "value" : "Telefone c/ whatsapp"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -501,7 +501,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Telefone2"
+                          "value" : "Telefone"
                         },
                         "placeholder" : {
                           "type" : "constant"

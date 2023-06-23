@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "AgendamentoTriagemForm",
   "name" : "AgendamentoTriagemForm",
-  "lastUpdate" : 1686948974641,
+  "lastUpdate" : 1687465738480,
   "rows" : [
     [
       {
@@ -427,7 +427,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Telefone1"
+                          "value" : "Telefone c/ whatsapp"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -513,7 +513,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Telefone2"
+                          "value" : "Telefone"
                         },
                         "placeholder" : {
                           "type" : "constant"

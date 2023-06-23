@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.14.0">
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.15.0.beta-01">
     <businessObjects>
         <businessObject qualifiedName="com.odontologia_ufsc.model.Agendamento">
             <fields>
@@ -94,25 +94,26 @@
                 <field type="STRING" length="64" name="situacaoAtendimento" nullable="true" collection="false">
                     <description>Situação do paciente diante tratamento(Alta, Espera de Triagem, Triado, Desistência, Sem Contato,Referencia,ContraReferencia).</description>
                 </field>
-                <field type="STRING" length="16" name="estomatologia" nullable="true" collection="false">
+                <field type="STRING" length="255" name="estomatologia" nullable="true" collection="false">
                     <description>esAc ou esBio</description>
                 </field>
-                <field type="STRING" length="16" name="dentistica" nullable="true" collection="false">
+                <field type="STRING" length="255" name="dentistica" nullable="true" collection="false">
                     <description>de1 ou de2</description>
                 </field>
-                <field type="STRING" length="16" name="cirurgia" nullable="true" collection="false">
+                <field type="STRING" length="255" name="cirurgia" nullable="true" collection="false">
                     <description>ci1 ou ci2</description>
                 </field>
-                <field type="STRING" length="16" name="periodontia" nullable="true" collection="false">
+                <field type="STRING" length="255" name="periodontia" nullable="true" collection="false">
                     <description>pe0 ou peNt ou peCi ou peTr</description>
                 </field>
-                <field type="STRING" length="16" name="endodontia" nullable="true" collection="false">
+                <field type="STRING" length="255" name="endodontia" nullable="true" collection="false">
                     <description>en1 ou en2</description>
                 </field>
-                <field type="STRING" length="16" name="protese" nullable="true" collection="false">
+                <field type="STRING" length="255" name="protese" nullable="true" collection="false">
                     <description>pt ou ppr ou fixa ou pti ou placa</description>
                 </field>
                 <field type="BOOLEAN" length="255" name="permissaoAlterar" nullable="true" collection="false"/>
+                <field type="STRING" length="512" name="procedimentosRealizados" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

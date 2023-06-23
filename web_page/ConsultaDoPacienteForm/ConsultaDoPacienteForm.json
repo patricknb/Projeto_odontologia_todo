@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "ConsultaDoPacienteForm",
   "name" : "ConsultaDoPacienteForm",
-  "lastUpdate" : 1686867245049,
+  "lastUpdate" : 1687462451671,
   "rows" : [
     [
       {
@@ -472,8 +472,8 @@
                       "dimension" : {
                         "xs" : 12,
                         "sm" : 12,
-                        "md" : 12,
-                        "lg" : 12
+                        "md" : 4,
+                        "lg" : 4
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -488,9 +488,13 @@
                           "type" : "constant",
                           "value" : false
                         },
-                        "required" : {
+                        "allowHTML" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "inline" : {
+                          "type" : "constant",
+                          "value" : true
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -508,14 +512,9 @@
                           "type" : "constant",
                           "value" : 4
                         },
-                        "placeholder" : {
-                          "type" : "interpolation",
-                          "value" : "Select an option"
-                        },
                         "availableValues" : {
                           "type" : "constant",
                           "value" : [
-                            "desnecessário",
                             "esAc",
                             "esBIO"
                           ]
@@ -524,20 +523,17 @@
                           "type" : "constant"
                         },
                         "returnedKey" : {
-                          "type" : "constant"
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "paciente.estomatologia"
-                        },
-                        "allowHTML" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : ""
+                        },
+                        "selectedValues" : {
+                          "type" : "variable",
+                          "value" : "estomatologiaVarForm"
                         }
                       },
-                      "reference" : "0b9e1e93-da04-44e9-869d-45db0cc00795",
+                      "reference" : "4e4c6f9a-be24-4738-a9b6-886038edf813",
                       "hasValidationError" : false,
-                      "id" : "pbSelect"
+                      "id" : "pbChecklist"
                     }
                   ],
                   [
@@ -546,8 +542,8 @@
                       "dimension" : {
                         "xs" : 12,
                         "sm" : 12,
-                        "md" : 12,
-                        "lg" : 12
+                        "md" : 6,
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -562,9 +558,13 @@
                           "type" : "constant",
                           "value" : false
                         },
-                        "required" : {
+                        "allowHTML" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "inline" : {
+                          "type" : "constant",
+                          "value" : true
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -582,14 +582,9 @@
                           "type" : "constant",
                           "value" : 4
                         },
-                        "placeholder" : {
-                          "type" : "interpolation",
-                          "value" : "Select an option"
-                        },
                         "availableValues" : {
                           "type" : "constant",
                           "value" : [
-                            "desnecessário",
                             "De1",
                             "De2"
                           ]
@@ -600,18 +595,14 @@
                         "returnedKey" : {
                           "type" : "constant"
                         },
-                        "value" : {
+                        "selectedValues" : {
                           "type" : "variable",
-                          "value" : "paciente.dentistica"
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
+                          "value" : "dentisticaVarForm"
                         }
                       },
-                      "reference" : "5d1c3e88-85dd-4c58-9513-e9b6110a2127",
+                      "reference" : "cc786407-e39f-4609-9486-0a75787082cb",
                       "hasValidationError" : false,
-                      "id" : "pbSelect"
+                      "id" : "pbChecklist"
                     }
                   ],
                   [
@@ -620,8 +611,8 @@
                       "dimension" : {
                         "xs" : 12,
                         "sm" : 12,
-                        "md" : 12,
-                        "lg" : 12
+                        "md" : 6,
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -636,9 +627,13 @@
                           "type" : "constant",
                           "value" : false
                         },
-                        "required" : {
+                        "allowHTML" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "inline" : {
+                          "type" : "constant",
+                          "value" : true
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -656,14 +651,9 @@
                           "type" : "constant",
                           "value" : 4
                         },
-                        "placeholder" : {
-                          "type" : "interpolation",
-                          "value" : "Select an option"
-                        },
                         "availableValues" : {
                           "type" : "constant",
                           "value" : [
-                            "desnecessário",
                             "Ci1",
                             "Ci2"
                           ]
@@ -674,18 +664,14 @@
                         "returnedKey" : {
                           "type" : "constant"
                         },
-                        "value" : {
+                        "selectedValues" : {
                           "type" : "variable",
-                          "value" : "paciente.cirurgia"
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
+                          "value" : "cirurgiaVarForm"
                         }
                       },
-                      "reference" : "0c5433d2-6960-4e77-acf1-c1a369f8d5ed",
+                      "reference" : "f6692c81-ec35-40c2-9aba-6789ed468aaa",
                       "hasValidationError" : false,
-                      "id" : "pbSelect"
+                      "id" : "pbChecklist"
                     }
                   ],
                   [
@@ -694,8 +680,8 @@
                       "dimension" : {
                         "xs" : 12,
                         "sm" : 12,
-                        "md" : 12,
-                        "lg" : 12
+                        "md" : 6,
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -710,9 +696,13 @@
                           "type" : "constant",
                           "value" : false
                         },
-                        "required" : {
+                        "allowHTML" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "inline" : {
+                          "type" : "constant",
+                          "value" : true
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -720,7 +710,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Periondontia"
+                          "value" : "Periodontia"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -730,14 +720,9 @@
                           "type" : "constant",
                           "value" : 4
                         },
-                        "placeholder" : {
-                          "type" : "interpolation",
-                          "value" : "Select an option"
-                        },
                         "availableValues" : {
                           "type" : "constant",
                           "value" : [
-                            "desnecessário",
                             "pe0",
                             "peNt",
                             "peCi",
@@ -750,18 +735,14 @@
                         "returnedKey" : {
                           "type" : "constant"
                         },
-                        "value" : {
+                        "selectedValues" : {
                           "type" : "variable",
-                          "value" : "paciente.periodontia"
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
+                          "value" : "periodontiaVarForm"
                         }
                       },
-                      "reference" : "26b56984-2fed-4979-b13b-2f436f68e0d5",
+                      "reference" : "c924e25f-752d-4c21-83b7-72f5c01b5c49",
                       "hasValidationError" : false,
-                      "id" : "pbSelect"
+                      "id" : "pbChecklist"
                     }
                   ],
                   [
@@ -770,8 +751,8 @@
                       "dimension" : {
                         "xs" : 12,
                         "sm" : 12,
-                        "md" : 12,
-                        "lg" : 12
+                        "md" : 6,
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -786,9 +767,13 @@
                           "type" : "constant",
                           "value" : false
                         },
-                        "required" : {
+                        "allowHTML" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "inline" : {
+                          "type" : "constant",
+                          "value" : true
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -806,14 +791,9 @@
                           "type" : "constant",
                           "value" : 4
                         },
-                        "placeholder" : {
-                          "type" : "interpolation",
-                          "value" : "Select an option"
-                        },
                         "availableValues" : {
                           "type" : "constant",
                           "value" : [
-                            "desnecessário",
                             "en1",
                             "en2"
                           ]
@@ -824,18 +804,14 @@
                         "returnedKey" : {
                           "type" : "constant"
                         },
-                        "value" : {
+                        "selectedValues" : {
                           "type" : "variable",
-                          "value" : "paciente.endodontia"
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
+                          "value" : "endodontiaVarForm"
                         }
                       },
-                      "reference" : "d23c2e32-2bc1-4a38-9750-4836378aa4dd",
+                      "reference" : "185b6760-0cf2-4f3a-890c-9259b3759902",
                       "hasValidationError" : false,
-                      "id" : "pbSelect"
+                      "id" : "pbChecklist"
                     }
                   ],
                   [
@@ -844,8 +820,8 @@
                       "dimension" : {
                         "xs" : 12,
                         "sm" : 12,
-                        "md" : 12,
-                        "lg" : 12
+                        "md" : 6,
+                        "lg" : 6
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -860,9 +836,13 @@
                           "type" : "constant",
                           "value" : false
                         },
-                        "required" : {
+                        "allowHTML" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "inline" : {
+                          "type" : "constant",
+                          "value" : true
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -880,14 +860,9 @@
                           "type" : "constant",
                           "value" : 4
                         },
-                        "placeholder" : {
-                          "type" : "interpolation",
-                          "value" : "Select an option"
-                        },
                         "availableValues" : {
                           "type" : "constant",
                           "value" : [
-                            "desnecessário",
                             "pt",
                             "ppr",
                             "fixa",
@@ -901,18 +876,14 @@
                         "returnedKey" : {
                           "type" : "constant"
                         },
-                        "value" : {
+                        "selectedValues" : {
                           "type" : "variable",
-                          "value" : "paciente.protese"
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
+                          "value" : "proteseVarForm"
                         }
                       },
-                      "reference" : "30376cfd-2672-40a8-9cc4-eb6f7415d99d",
+                      "reference" : "f106a542-aab0-478e-9cc6-5652b81b88b9",
                       "hasValidationError" : false,
-                      "id" : "pbSelect"
+                      "id" : "pbChecklist"
                     }
                   ],
                   [
@@ -966,7 +937,7 @@
                           "value" : [
                             "Em atendimento",
                             "Alta",
-                            "Triado"
+                            "Atendimento incompleto"
                           ]
                         },
                         "displayedKey" : {
@@ -1065,6 +1036,27 @@
                   "allowHTML" : {
                     "type" : "constant",
                     "value" : true
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "0e09124a-d0c9-40b3-85fb-45855b393509",
@@ -1188,12 +1180,12 @@
         "\t\t\tnome: $data.paciente.nome !== undefined ? $data.paciente.nome : null,",
         "\t\t\tcodProntuario: $data.paciente.codProntuario !== undefined ? $data.paciente.codProntuario : null,",
         "\t\t\tsituacaoAtendimento: $data.paciente.situacaoAtendimento !== undefined ? $data.paciente.situacaoAtendimento : null,",
-        "\t\t\testomatologia: $data.paciente.estomatologia !== undefined ? $data.paciente.estomatologia : null,",
-        "\t\t\tdentistica: $data.paciente.dentistica !== undefined ? $data.paciente.dentistica : null,",
-        "\t\t\tcirurgia: $data.paciente.cirurgia !== undefined ? $data.paciente.cirurgia : null,",
-        "\t\t\tperiodontia: $data.paciente.periodontia !== undefined ? $data.paciente.periodontia : null,",
-        "\t\t\tendodontia: $data.paciente.endodontia !== undefined ? $data.paciente.endodontia : null,",
-        "\t\t\tprotese: $data.paciente.protese !== undefined ? $data.paciente.protese : null",
+        "\t\t\testomatologia: $data.paciente.estomatologia !== undefined ? $data.estomatologiaResultanteVarForm : null,",
+        "\t\t\tdentistica: $data.paciente.dentistica !== undefined ? $data.dentisticaResultanteVarForm : null,",
+        "\t\t\tcirurgia: $data.paciente.cirurgia !== undefined ? $data.cirurgiaResultanteVarForm : null,",
+        "\t\t\tperiodontia: $data.paciente.periodontia !== undefined ? $data.periodontiaResultanteVarForm : null,",
+        "\t\t\tendodontia: $data.paciente.endodontia !== undefined ? $data.endodontiaResultanteVarForm : null,",
+        "\t\t\tprotese: $data.paciente.protese !== undefined ? $data.proteseResultanteVarForm : null",
         "\t\t}",
         "\t}",
         "}"
@@ -1211,6 +1203,151 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "estomatologiaVarForm" : {
+      "type" : "expression",
+      "value" : [
+        "var estomatologiaString = $data.paciente.estomatologia",
+        "return estomatologiaString.split(\" \");"
+      ],
+      "exposed" : false
+    },
+    "asd" : {
+      "type" : "expression",
+      "value" : [
+        "return [esAc, esBIO]"
+      ],
+      "exposed" : false
+    },
+    "dentisticaVarForm" : {
+      "type" : "expression",
+      "value" : [
+        "var dentisticaString = $data.paciente.dentistica",
+        "return dentisticaString.split(\" \");"
+      ],
+      "exposed" : false
+    },
+    "cirurgiaVarForm" : {
+      "type" : "expression",
+      "value" : [
+        "var cirurgiaString = $data.paciente.cirurgia",
+        "return cirurgiaString.split(\" \");"
+      ],
+      "exposed" : false
+    },
+    "periodontiaVarForm" : {
+      "type" : "expression",
+      "value" : [
+        "var periodontiaString = $data.paciente.periodontia",
+        "return periodontiaString.split(\" \");"
+      ],
+      "exposed" : false
+    },
+    "endodontiaVarForm" : {
+      "type" : "expression",
+      "value" : [
+        "var endodontiaString = $data.paciente.endodontia",
+        "return endodontiaString.split(\" \");"
+      ],
+      "exposed" : false
+    },
+    "proteseVarForm" : {
+      "type" : "expression",
+      "value" : [
+        "var proteseString = $data.paciente.protese",
+        "return proteseString.split(\" \");"
+      ],
+      "exposed" : false
+    },
+    "estomatologiaResultanteVarForm" : {
+      "type" : "expression",
+      "value" : [
+        "var resposta = \"\";",
+        "for (var index in $data.estomatologiaVarForm){",
+        "    if (index == 0){",
+        "        resposta += $data.estomatologiaVarForm[index];",
+        "    }else{",
+        "        resposta += \" \" + $data.estomatologiaVarForm[index];",
+        "    }",
+        "}",
+        "return resposta"
+      ],
+      "exposed" : false
+    },
+    "dentisticaResultanteVarForm" : {
+      "type" : "expression",
+      "value" : [
+        "var resposta = \"\";",
+        "for (var index in $data.dentisticaVarForm){",
+        "    if (index == 0){",
+        "        resposta += $data.dentisticaVarForm[index];",
+        "    }else{",
+        "        resposta += \" \" + $data.dentisticaVarForm[index];",
+        "    }",
+        "}",
+        "return resposta"
+      ],
+      "exposed" : false
+    },
+    "cirurgiaResultanteVarForm" : {
+      "type" : "expression",
+      "value" : [
+        "var resposta = \"\";",
+        "for (var index in $data.cirurgiaVarForm){",
+        "    if (index == 0){",
+        "        resposta += $data.cirurgiaVarForm[index];",
+        "    }else{",
+        "        resposta += \" \" + $data.cirurgiaVarForm[index];",
+        "    }",
+        "}",
+        "return resposta"
+      ],
+      "exposed" : false
+    },
+    "periodontiaResultanteVarForm" : {
+      "type" : "expression",
+      "value" : [
+        "var resposta = \"\";",
+        "for (var index in $data.periodontiaVarForm){",
+        "    if (index == 0){",
+        "        resposta += $data.periodontiaVarForm[index];",
+        "    }else{",
+        "        resposta += \" \" + $data.periodontiaVarForm[index];",
+        "    }",
+        "}",
+        "return resposta"
+      ],
+      "exposed" : false
+    },
+    "endodontiaResultanteVarForm" : {
+      "type" : "expression",
+      "value" : [
+        "var resposta = \"\";",
+        "for (var index in $data.endodontiaVarForm){",
+        "    if (index == 0){",
+        "        resposta += $data.endodontiaVarForm[index];",
+        "    }else{",
+        "        resposta += \" \" + $data.endodontiaVarForm[index];",
+        "    }",
+        "}",
+        "return resposta"
+      ],
+      "exposed" : false
+    },
+    "proteseResultanteVarForm" : {
+      "type" : "expression",
+      "value" : [
+        "var resposta = \"\";",
+        "for (var index in $data.proteseVarForm){",
+        "    if (index == 0){",
+        "        resposta += $data.proteseVarForm[index];",
+        "    }else{",
+        "        resposta += \" \" + $data.proteseVarForm[index];",
+        "    }",
+        "}",
+        "return resposta"
       ],
       "exposed" : false
     }
