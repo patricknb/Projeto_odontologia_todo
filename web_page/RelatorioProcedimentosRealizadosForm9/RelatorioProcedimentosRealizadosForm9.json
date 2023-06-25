@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "RelatorioProcedimentosRealizadosForm9",
   "name" : "RelatorioProcedimentosRealizadosForm",
-  "lastUpdate" : 1687466016823,
+  "lastUpdate" : 1687552733983,
   "rows" : [
     [
       {
@@ -400,59 +400,325 @@
                           "type" : "constant",
                           "value" : false
                         },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
                         "allowHTML" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "text" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
                           "type" : "interpolation",
-                          "value" : "Link para o SIGTAP"
+                          "value" : "Especialidade"
                         },
-                        "type" : {
+                        "labelPosition" : {
                           "type" : "constant",
-                          "value" : "URL"
+                          "value" : "top"
                         },
-                        "targetUrl" : {
+                        "labelWidth" : {
                           "type" : "constant",
-                          "value" : "http://sigtap.datasus.gov.br/tabela-unificada/app/sec/inicio.jsp"
+                          "value" : 4
                         },
-                        "pageToken" : {
-                          "type" : "constant"
+                        "placeholder" : {
+                          "type" : "interpolation",
+                          "value" : "Select an option"
                         },
-                        "processName" : {
-                          "type" : "constant"
-                        },
-                        "processVersion" : {
-                          "type" : "constant"
-                        },
-                        "taskId" : {
-                          "type" : "constant"
-                        },
-                        "caseId" : {
-                          "type" : "constant"
-                        },
-                        "target" : {
+                        "availableValues" : {
                           "type" : "constant",
-                          "value" : "_blank"
+                          "value" : [
+                            "Estomatologia",
+                            "Dentistica",
+                            "Cirurgia",
+                            "Periodontia",
+                            "Endodontia",
+                            "Prótese"
+                          ]
                         },
-                        "appToken" : {
+                        "displayedKey" : {
                           "type" : "constant"
                         },
-                        "urlParams" : {
+                        "returnedKey" : {
                           "type" : "constant"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "especialidadeVarForm"
+                        }
+                      },
+                      "reference" : "fd3ad11b-c796-46f3-9d45-056d2de409ed",
+                      "hasValidationError" : false,
+                      "id" : "pbSelect"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Procedimento"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation",
+                          "value" : "Select an option"
+                        },
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "procedimentosDisponiveisVarForm"
+                        },
+                        "displayedKey" : {
+                          "type" : "constant"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "procedimentoSelecionado"
+                        }
+                      },
+                      "reference" : "afb6edd0-f4d8-4f2c-9c09-be484ce820d1",
+                      "hasValidationError" : false,
+                      "id" : "pbSelect"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 6,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Adicionar"
                         },
                         "alignment" : {
                           "type" : "constant",
-                          "value" : "left"
+                          "value" : "center"
                         },
                         "buttonStyle" : {
                           "type" : "constant",
-                          "value" : "link"
+                          "value" : "success"
+                        },
+                        "action" : {
+                          "type" : "constant",
+                          "value" : "Submit task"
+                        },
+                        "assign" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "url" : {
+                          "type" : "interpolation"
+                        },
+                        "responseStatusCode" : {
+                          "type" : "variable"
+                        },
+                        "dataToSend" : {
+                          "type" : "constant"
+                        },
+                        "dataFromSuccess" : {
+                          "type" : "variable"
+                        },
+                        "closeOnSuccess" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "dataFromError" : {
+                          "type" : "variable"
+                        },
+                        "targetUrlOnSuccess" : {
+                          "type" : "interpolation"
+                        },
+                        "collectionToModify" : {
+                          "type" : "variable"
+                        },
+                        "modalId" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "collectionPosition" : {
+                          "type" : "constant",
+                          "value" : "Last"
+                        },
+                        "valueToAdd" : {
+                          "type" : "constant"
+                        },
+                        "removeItem" : {
+                          "type" : "variable"
+                        },
+                        "TargetVariable" : {
+                          "type" : "variable",
+                          "value" : "relatorioProcedimentos"
+                        },
+                        "SourceVariable" : {
+                          "type" : "variable",
+                          "value" : "procedimentoSelecionado"
                         }
                       },
-                      "reference" : "d50dc967-37ce-4f8b-a01c-7adc9f0fc3c5",
+                      "reference" : "39e6527f-e6fb-4dda-b785-bc0c25be6453",
                       "hasValidationError" : false,
-                      "id" : "pbLink"
+                      "id" : "customAdicionarProcedimento"
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 6,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Limpar"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "center"
+                        },
+                        "buttonStyle" : {
+                          "type" : "constant",
+                          "value" : "danger"
+                        },
+                        "action" : {
+                          "type" : "constant",
+                          "value" : "Submit task"
+                        },
+                        "assign" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "url" : {
+                          "type" : "interpolation"
+                        },
+                        "responseStatusCode" : {
+                          "type" : "variable"
+                        },
+                        "dataToSend" : {
+                          "type" : "constant"
+                        },
+                        "dataFromSuccess" : {
+                          "type" : "variable"
+                        },
+                        "closeOnSuccess" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "dataFromError" : {
+                          "type" : "variable"
+                        },
+                        "targetUrlOnSuccess" : {
+                          "type" : "interpolation"
+                        },
+                        "collectionToModify" : {
+                          "type" : "variable"
+                        },
+                        "modalId" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "collectionPosition" : {
+                          "type" : "constant",
+                          "value" : "Last"
+                        },
+                        "valueToAdd" : {
+                          "type" : "constant"
+                        },
+                        "removeItem" : {
+                          "type" : "variable"
+                        },
+                        "TargetVariable" : {
+                          "type" : "variable",
+                          "value" : "relatorioProcedimentos"
+                        }
+                      },
+                      "reference" : "09be0051-0938-4a69-b1e3-1ab97ee53c79",
+                      "hasValidationError" : false,
+                      "id" : "customLimparProcedimentos"
                     }
                   ],
                   [
@@ -475,7 +741,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "required" : {
                           "type" : "constant",
@@ -499,7 +765,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Procedimentos Realizados"
+                          "value" : "Procedimentos realizados"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -511,61 +777,12 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "paciente.procedimentosRealizados"
-                        },
-                        "toolbarsGrp1" : {
-                          "type" : "constant",
-                          "value" : [
-                            "h1",
-                            "h2",
-                            "h3",
-                            "h4",
-                            "h5",
-                            "h6",
-                            "p",
-                            "ul",
-                            "ol"
-                          ]
-                        },
-                        "toolbarsGrp2" : {
-                          "type" : "constant",
-                          "value" : [
-                            "bold",
-                            "italics",
-                            "underline",
-                            "strikeThrough",
-                            "pre",
-                            "quote"
-                          ]
-                        },
-                        "toolbarsGrp3" : {
-                          "type" : "constant",
-                          "value" : [
-                            "justifyLeft",
-                            "justifyCenter",
-                            "justifyRight",
-                            "indent",
-                            "outdent"
-                          ]
-                        },
-                        "toolbarsGrp4" : {
-                          "type" : "constant",
-                          "value" : [
-                            "html",
-                            "insertImage",
-                            "insertLink",
-                            "insertVideo",
-                            "wordcount",
-                            "charcount",
-                            "undo",
-                            "redo",
-                            "clear"
-                          ]
+                          "value" : "relatorioProcedimentos"
                         }
                       },
-                      "reference" : "a20473fc-f277-4d05-946d-965b119a24b4",
+                      "reference" : "c360cde5-7ec8-45fd-beb8-d5e58502541b",
                       "hasValidationError" : false,
-                      "id" : "pbRichTextarea"
+                      "id" : "pbTextarea"
                     }
                   ]
                 ]
@@ -640,6 +857,31 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "28dd16cd-65c2-421e-b268-5937ee66df59",
@@ -761,7 +1003,7 @@
         "\t\tpacienteInput: {",
         "\t\t\tcpf: $data.paciente.cpf !== undefined ? $data.paciente.cpf : null,",
         "\t\t\tnome: $data.paciente.nome !== undefined ? $data.paciente.nome : null,",
-        "\t\t\tprocedimentosRealizados: $data.paciente.procedimentosRealizados !== undefined ? $data.paciente.procedimentosRealizados : null",
+        "\t\t\tprocedimentosRealizados: $data.paciente.procedimentosRealizados !== undefined ? $data.relatorioProcedimentos : null",
         "\t\t}",
         "\t}",
         "}"
@@ -780,6 +1022,38 @@
       "value" : [
         "id"
       ],
+      "exposed" : false
+    },
+    "especialidadeVarForm" : {
+      "type" : "constant",
+      "exposed" : false
+    },
+    "procedimentosDisponiveisVarForm" : {
+      "type" : "expression",
+      "value" : [
+        "var ListaProcedimentos = [[\"esAc\", \"esBIO\"],[\"De1\",\"De2\"],[\"Ci1\",\"Ci2\"],[\"pe0\",\"peNt\",\"peCi\",\"peTr\"],[\"En1\",\"En2\"],[\"pt\",\"ppr\",\"fixa\",\"pti\",\"placa\"]];",
+        "",
+        "var pos = {\"Estomatologia\":0,",
+        "           \"Dentistica\":1,",
+        "           \"Cirurgia\":2,",
+        "           \"Periodontia\":3,",
+        "           \"Endodontia\":4,",
+        "           \"Prótese\":5,",
+        "}",
+        "",
+        "return ListaProcedimentos[pos[$data.especialidadeVarForm]];"
+      ],
+      "exposed" : false
+    },
+    "relatorioProcedimentos" : {
+      "type" : "constant",
+      "value" : [
+        "procedimentosRealizados:"
+      ],
+      "exposed" : false
+    },
+    "procedimentoSelecionado" : {
+      "type" : "constant",
       "exposed" : false
     }
   },

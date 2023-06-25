@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "CadastroDePacienteForm",
   "name" : "CadastroDePacienteForm",
-  "lastUpdate" : 1687465673431,
+  "lastUpdate" : 1687665160813,
   "rows" : [
     [
       {
@@ -415,8 +415,8 @@
                       "dimension" : {
                         "xs" : 12,
                         "sm" : 12,
-                        "md" : 4,
-                        "lg" : 4
+                        "md" : 3,
+                        "lg" : 3
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -439,26 +439,55 @@
                           "type" : "constant",
                           "value" : false
                         },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Tem WhatsApp?"
+                          "value" : "Possui WhatsApp?"
                         },
-                        "value" : {
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "inline" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "availableValues" : {
+                          "type" : "constant",
+                          "value" : [
+                            "sim",
+                            "não"
+                          ]
+                        },
+                        "displayedKey" : {
+                          "type" : "constant"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant"
+                        },
+                        "selectedValue" : {
                           "type" : "variable",
-                          "value" : "whatsapp"
+                          "value" : "whats"
                         }
                       },
-                      "reference" : "896bc7cc-6217-4f73-bc25-30b7834875d6",
+                      "reference" : "61494b3c-57c4-454c-b375-319b2251b1e9",
                       "hasValidationError" : false,
-                      "id" : "pbCheckbox"
+                      "id" : "pbRadioButtons"
                     },
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 4,
+                        "md" : 3,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 4
+                        "lg" : 3
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -467,7 +496,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!whatsapp"
+                          "value" : "whats != \"sim\""
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -482,12 +511,12 @@
                           "value" : 1
                         },
                         "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "whats != \"sim\""
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Telefone c/ whatsapp"
+                          "value" : "Telefone(WhatsApp)"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -505,8 +534,8 @@
                           "value" : "formInput.pacienteInput.telefone1"
                         },
                         "required" : {
-                          "type" : "constant",
-                          "value" : false
+                          "type" : "expression",
+                          "value" : "whats == \"sim\""
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -539,10 +568,10 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 4,
+                        "md" : 3,
                         "sm" : 12,
                         "xs" : 12,
-                        "lg" : 4
+                        "lg" : 3
                       },
                       "propertyValues" : {
                         "labelHidden" : {
@@ -774,8 +803,8 @@
                       "dimension" : {
                         "xs" : 12,
                         "sm" : 12,
-                        "md" : 4,
-                        "lg" : 6
+                        "md" : 3,
+                        "lg" : 3
                       },
                       "propertyValues" : {
                         "cssClasses" : {
@@ -1744,11 +1773,8 @@
       ],
       "exposed" : false
     },
-    "whatsapp" : {
-      "type" : "expression",
-      "value" : [
-        "return false"
-      ],
+    "whats" : {
+      "type" : "constant",
       "exposed" : false
     }
   },

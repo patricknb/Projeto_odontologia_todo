@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "AgendamentoConsultaForm",
   "name" : "AgendamentoConsultaForm",
-  "lastUpdate" : 1687465760524,
+  "lastUpdate" : 1687665188125,
   "rows" : [
     [
       {
@@ -415,7 +415,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Telefone c/ whatsapp"
+                          "value" : "Telefone(WhatsApp)"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -722,6 +722,70 @@
                       "id" : "pbInput",
                       "description" : ""
                     }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Datas disponíveis para agendamento"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "agendamento.DatasDisponiveisParaConsulta"
+                        }
+                      },
+                      "reference" : "5273da46-2d85-48b2-9c06-53db85501664",
+                      "hasValidationError" : false,
+                      "id" : "pbTextarea"
+                    }
                   ]
                 ]
               }
@@ -805,39 +869,23 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
                         "xs" : 12,
-                        "lg" : 12
+                        "sm" : 12,
+                        "md" : 6,
+                        "lg" : 6
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
                         "disabled" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Consulta agendada"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "agendamento.aConsulta"
                         },
                         "required" : {
                           "type" : "constant",
@@ -845,13 +893,49 @@
                         },
                         "allowHTML" : {
                           "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Consulta agendada?"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "inline" : {
+                          "type" : "constant",
                           "value" : true
+                        },
+                        "availableValues" : {
+                          "type" : "constant",
+                          "value" : [
+                            "sim",
+                            "não"
+                          ]
+                        },
+                        "displayedKey" : {
+                          "type" : "constant"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant"
+                        },
+                        "selectedValue" : {
+                          "type" : "variable",
+                          "value" : "agendamento.aConsulta"
                         }
                       },
-                      "reference" : "015f3342-30fd-4305-9649-35d118c278b9",
+                      "reference" : "98303514-a4a9-4fca-ae3a-5e4bc7858da6",
                       "hasValidationError" : false,
-                      "id" : "pbCheckbox",
-                      "description" : ""
+                      "id" : "pbRadioButtons"
                     }
                   ],
                   [
@@ -870,15 +954,15 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!agendamento.aConsulta"
+                          "value" : "!bool"
                         },
                         "readOnly" : {
                           "type" : "expression",
-                          "value" : "!agendamento.aConsulta"
+                          "value" : "!bool"
                         },
                         "required" : {
                           "type" : "expression",
-                          "value" : "agendamento.aConsulta"
+                          "value" : "bool"
                         },
                         "allowHTML" : {
                           "type" : "constant",
@@ -1162,7 +1246,7 @@
         "\t\t},",
         "\t\t//map agendamento variable to expected task contract input",
         "\t\tagendamentoInput: {",
-        "\t\t\taConsulta: $data.agendamento.aConsulta !== undefined ? $data.agendamento.aConsulta : null,",
+        "\t\t\taConsulta: $data.agendamento.aConsulta !== undefined ? $data.bool : null,",
         "\t\t\tdataConsulta: $data.agendamento.dataConsulta !== undefined ? $data.agendamento.dataConsulta : null",
         "\t\t}",
         "\t}",
@@ -1188,6 +1272,21 @@
       "type" : "url",
       "value" : [
         "../{{context.agendamento_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "bool" : {
+      "type" : "expression",
+      "value" : [
+        "var res;",
+        "",
+        "if ($data.agendamento.aConsulta == \"sim\"){",
+        "    res = true;",
+        "} else {",
+        "    res = false;",
+        "}",
+        "",
+        "return res;"
       ],
       "exposed" : false
     }

@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "AgendamentoTriagemForm",
   "name" : "AgendamentoTriagemForm",
-  "lastUpdate" : 1687465738480,
+  "lastUpdate" : 1687665199753,
   "rows" : [
     [
       {
@@ -427,7 +427,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Telefone c/ whatsapp"
+                          "value" : "Telefone(WhatsApp)"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -817,39 +817,23 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
                         "xs" : 12,
-                        "lg" : 12
+                        "sm" : 12,
+                        "md" : 6,
+                        "lg" : 6
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
                         "disabled" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Triagem agendada"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.agendamentoInput.aTriagem"
                         },
                         "required" : {
                           "type" : "constant",
@@ -857,13 +841,49 @@
                         },
                         "allowHTML" : {
                           "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Triagem agendada?"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "inline" : {
+                          "type" : "constant",
                           "value" : true
+                        },
+                        "availableValues" : {
+                          "type" : "constant",
+                          "value" : [
+                            "sim",
+                            "não"
+                          ]
+                        },
+                        "displayedKey" : {
+                          "type" : "constant"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant"
+                        },
+                        "selectedValue" : {
+                          "type" : "variable",
+                          "value" : "tempATriagem"
                         }
                       },
-                      "reference" : "4bc86571-8c98-4a90-8f63-83dcdb5834c0",
+                      "reference" : "97a0d3c3-74d7-47e8-86a6-55ee1fa18e2c",
                       "hasValidationError" : false,
-                      "id" : "pbCheckbox",
-                      "description" : ""
+                      "id" : "pbRadioButtons"
                     }
                   ],
                   [
@@ -1202,6 +1222,21 @@
       "value" : [
         "id"
       ],
+      "exposed" : false
+    },
+    "bool" : {
+      "type" : "expression",
+      "value" : [
+        "if ($data.tempATriagem == \"sim\"){",
+        "    $data.formInput.agendamentoInput.aTriagem = true;",
+        "} else {",
+        "    $data.formInput.agendamentoInput.aTriagem = false;",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "tempATriagem" : {
+      "type" : "constant",
       "exposed" : false
     }
   },
