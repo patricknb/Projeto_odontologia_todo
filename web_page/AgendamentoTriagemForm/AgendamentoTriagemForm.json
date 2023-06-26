@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "AgendamentoTriagemForm",
   "name" : "AgendamentoTriagemForm",
-  "lastUpdate" : 1687665199753,
+  "lastUpdate" : 1687743082902,
   "rows" : [
     [
       {
@@ -1020,7 +1020,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Concluir agendamento"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -1066,6 +1066,27 @@
                   "allowHTML" : {
                     "type" : "constant",
                     "value" : true
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "0d0403de-cdef-4992-a40e-27a3ac5ea76b",

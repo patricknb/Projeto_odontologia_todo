@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "ConsultaDoPacienteForm",
   "name" : "ConsultaDoPacienteForm",
-  "lastUpdate" : 1687462451671,
+  "lastUpdate" : 1687743312465,
   "rows" : [
     [
       {
@@ -990,7 +990,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Atualizar quadro de necessidades"
                   },
                   "dataToSend" : {
                     "type" : "expression",

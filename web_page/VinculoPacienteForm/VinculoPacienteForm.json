@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "VinculoPacienteForm",
   "name" : "VinculoPacienteForm",
-  "lastUpdate" : 1686858878627,
+  "lastUpdate" : 1687739084103,
   "rows" : [
     [
       {
@@ -118,7 +118,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "3a5f4b47-31fe-4a20-80c7-7b3929bb199d",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -175,78 +184,6 @@
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "disabled" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "required" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Situação de atendimento"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "placeholder" : {
-                    "type" : "interpolation",
-                    "value" : "Select an option"
-                  },
-                  "availableValues" : {
-                    "type" : "constant",
-                    "value" : [
-                      "Em atendimento"
-                    ]
-                  },
-                  "displayedKey" : {
-                    "type" : "constant"
-                  },
-                  "returnedKey" : {
-                    "type" : "constant"
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "paciente.situacaoAtendimento"
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : true
-                  }
-                },
-                "reference" : "3cea7480-44e3-4313-ba74-2d6ad6b5427c",
-                "hasValidationError" : false,
-                "id" : "pbSelect"
               }
             ],
             [
@@ -1360,7 +1297,7 @@
         "\t\t\tcartaoSus: $data.paciente.cartaoSus !== undefined ? $data.paciente.cartaoSus : null,",
         "\t\t\tcodProntuario: $data.paciente.codProntuario !== undefined ? $data.paciente.codProntuario : null,",
         "\t\t\tprefHorario: $data.paciente.prefHorario !== undefined ? $data.paciente.prefHorario : null,",
-        "\t\t\tsituacaoAtendimento: $data.paciente.situacaoAtendimento !== undefined ? $data.paciente.situacaoAtendimento : null,",
+        "\t\t\tsituacaoAtendimento: $data.paciente.situacaoAtendimento !== undefined ? \"Em atendimento\" : null,",
         "\t\t\testomatologia: $data.paciente.estomatologia !== undefined ? $data.paciente.estomatologia : null,",
         "\t\t\tdentistica: $data.paciente.dentistica !== undefined ? $data.paciente.dentistica : null,",
         "\t\t\tcirurgia: $data.paciente.cirurgia !== undefined ? $data.paciente.cirurgia : null,",

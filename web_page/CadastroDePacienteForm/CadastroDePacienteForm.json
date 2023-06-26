@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "CadastroDePacienteForm",
   "name" : "CadastroDePacienteForm",
-  "lastUpdate" : 1687665160813,
+  "lastUpdate" : 1687743060665,
   "rows" : [
     [
       {
@@ -1572,7 +1572,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Cadastrar paciente na lista de espera"
                   },
                   "dataToSend" : {
                     "type" : "expression",

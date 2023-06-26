@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "RelatorioProcedimentosRealizadosForm9",
   "name" : "RelatorioProcedimentosRealizadosForm",
-  "lastUpdate" : 1687552733983,
+  "lastUpdate" : 1687743404096,
   "rows" : [
     [
       {
@@ -815,7 +815,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Enviar relatório"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -1026,6 +1026,9 @@
     },
     "especialidadeVarForm" : {
       "type" : "constant",
+      "value" : [
+        ""
+      ],
       "exposed" : false
     },
     "procedimentosDisponiveisVarForm" : {

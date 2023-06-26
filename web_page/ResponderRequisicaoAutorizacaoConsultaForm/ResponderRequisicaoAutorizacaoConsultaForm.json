@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "ResponderRequisicaoAutorizacaoConsultaForm",
   "name" : "ResponderRequisicaoAutorizacaoConsultaForm",
-  "lastUpdate" : 1686858878439,
+  "lastUpdate" : 1687743385556,
   "rows" : [
     [
       {
@@ -1009,7 +1009,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Permissao Alterar"
+                          "value" : "Alterações permitidas"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -1064,7 +1064,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Concluir"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -1110,6 +1110,27 @@
                   "allowHTML" : {
                     "type" : "constant",
                     "value" : true
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "a6de0a4e-f93e-4b41-8cd6-87c4b87b56f6",
