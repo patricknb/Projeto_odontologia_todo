@@ -1,9 +1,8 @@
 {
   "modelVersion" : "2.3",
-  "previousArtifactVersion" : "2.2",
-  "id" : "MarcarPresencaConsultaForm",
-  "name" : "MarcarPresencaConsultaForm",
-  "lastUpdate" : 1687832897344,
+  "id" : "newForm",
+  "name" : "newForm",
+  "lastUpdate" : 1687832872344,
   "rows" : [
     [
       {
@@ -12,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "53efedc0-9f76-4f51-8ea2-c9ef42177b58",
+        "reference" : "6ca85263-7029-4b41-b821-2ef516edcda5",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -49,13 +48,9 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
-                },
-                "allowHTML" : {
-                  "type" : "constant",
-                  "value" : true
                 }
               },
-              "reference" : "c2741bc5-ab6a-406e-8cf6-0e648d0749cb",
+              "reference" : "922dacdd-bc0e-46f9-882f-817e24e333b5",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -103,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "555f8e01-d71e-4fcd-aa53-57a3d16d4ff1",
+              "reference" : "e8d97f1a-c0ee-40d7-b092-3bd23adc7d53",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -119,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "a0115fc4-7a18-4968-80cd-206fb9ac132c",
+        "reference" : "8608019a-e5f6-425a-802e-fbbe85f20504",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -128,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "4d70509f-5d15-486b-bf8f-4078df54e0c7",
+          "reference" : "33ac55ed-cba9-490b-9de8-b8ac255eb631",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -165,13 +160,9 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : true
                   }
                 },
-                "reference" : "be2d8638-1f80-4f00-95af-c494111468ab",
+                "reference" : "42289fd1-faf5-4751-96e6-b1301f60f065",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -203,7 +194,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "18a61a9a-7bd2-40c8-b01f-b9b044989ce2",
+                "reference" : "0d9d1f49-7215-4b23-aeeb-cd42d7730480",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -262,6 +253,10 @@
                         },
                         "required" : {
                           "type" : "constant",
+                          "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
                           "value" : false
                         },
                         "minLength" : {
@@ -281,13 +276,9 @@
                         "step" : {
                           "type" : "constant",
                           "value" : 1
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
                         }
                       },
-                      "reference" : "ecffb2c6-2bbb-4fd1-8408-21077cea6568",
+                      "reference" : "e8cc0345-55f5-4983-94bd-bdbe9314ce8e",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -348,91 +339,9 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
+                          "value" : true
                         },
                         "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
-                        }
-                      },
-                      "reference" : "9175f8b8-18f0-4ce8-a3ce-8ee1ec5dd896",
-                      "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Pref Horario"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "paciente.prefHorario"
-                        },
-                        "required" : {
                           "type" : "constant",
                           "value" : false
                         },
@@ -453,192 +362,14 @@
                         "step" : {
                           "type" : "constant",
                           "value" : 1
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
                         }
                       },
-                      "reference" : "a1c339ca-89e3-4f8d-86bb-e09c31d61c3e",
+                      "reference" : "08c9276f-b279-45ae-ada6-2569bdfd4642",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
                     }
                   ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "inlineInput" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Data agendada"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "withTimeZone" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "agendamento.dataConsulta"
-                        },
-                        "dateFormat" : {
-                          "type" : "constant",
-                          "value" : "dd/MM/yyyy"
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation",
-                          "value" : "Enter a date (mm/dd/yyyy)"
-                        },
-                        "timeFormat" : {
-                          "type" : "constant",
-                          "value" : "H:mm:ss"
-                        },
-                        "timePlaceholder" : {
-                          "type" : "interpolation",
-                          "value" : "Enter a time (h:mm:ss a)"
-                        },
-                        "showToday" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "todayLabel" : {
-                          "type" : "interpolation",
-                          "value" : "Today"
-                        },
-                        "showNow" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "nowLabel" : {
-                          "type" : "interpolation",
-                          "value" : "Now"
-                        }
-                      },
-                      "reference" : "2a283b8f-19e3-4b7e-95fe-3ad10133dcbe",
-                      "hasValidationError" : false,
-                      "id" : "pbDateTimePicker"
-                    }
-                  ]
-                ]
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "level" : {
-                    "type" : "constant",
-                    "value" : "Level 4"
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "Agendamento"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : true
-                  }
-                },
-                "reference" : "477deaad-f6d8-490b-90be-4b44c83bc389",
-                "hasValidationError" : false,
-                "id" : "pbTitle",
-                "description" : ""
-              }
-            ],
-            [
-              {
-                "type" : "container",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "repeatedCollection" : {
-                    "type" : "variable"
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "83cd8af2-1261-4e2d-8a3c-e05f1e1ae503",
-                "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
                   [
                     {
                       "type" : "component",
@@ -667,7 +398,7 @@
                         },
                         "allowHTML" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "labelHidden" : {
                           "type" : "constant",
@@ -675,7 +406,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Paciente presente na Consulta?"
+                          "value" : "Situacao Atendimento"
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -683,17 +414,17 @@
                         },
                         "labelWidth" : {
                           "type" : "constant",
-                          "value" : 4
+                          "value" : 1
                         },
-                        "inline" : {
-                          "type" : "constant",
-                          "value" : true
+                        "placeholder" : {
+                          "type" : "interpolation"
                         },
                         "availableValues" : {
                           "type" : "constant",
                           "value" : [
-                            "Sim",
-                            "Não"
+                            "Atendimento incompleto",
+                            "Em atendimento",
+                            "Em alta"
                           ]
                         },
                         "displayedKey" : {
@@ -702,14 +433,14 @@
                         "returnedKey" : {
                           "type" : "constant"
                         },
-                        "selectedValue" : {
+                        "value" : {
                           "type" : "variable",
-                          "value" : "presencaC"
+                          "value" : "paciente.situacaoAtendimento"
                         }
                       },
-                      "reference" : "9828b734-2823-4ee0-bcca-4c983eede9a4",
+                      "reference" : "10b65865-b36b-4840-aefd-3966eb34061e",
                       "hasValidationError" : false,
-                      "id" : "pbRadioButtons"
+                      "id" : "pbSelect"
                     }
                   ]
                 ]
@@ -742,7 +473,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Registrar presença"
+                    "value" : "Submit"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -751,6 +482,10 @@
                   "dataFromError" : {
                     "type" : "variable",
                     "value" : "formOutput._submitError"
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   },
                   "labelHidden" : {
                     "type" : "constant",
@@ -784,34 +519,9 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "assign" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "url" : {
-                    "type" : "interpolation"
-                  },
-                  "responseStatusCode" : {
-                    "type" : "variable"
-                  },
-                  "dataFromSuccess" : {
-                    "type" : "variable"
-                  },
-                  "closeOnSuccess" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "modalId" : {
-                    "type" : "constant",
-                    "value" : ""
                   }
                 },
-                "reference" : "07e07008-96a1-4a18-8357-d82b9cca6618",
+                "reference" : "62e1fac9-241e-4dda-93d7-a68086d434f1",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -863,7 +573,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "af4445c6-6a65-4a07-a512-75b0fbaf75ad",
+                "reference" : "df0c1696-605c-4a47-abf3-b76e1d020734",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -876,14 +586,14 @@
   ],
   "assets" : [
     {
-      "id" : "8d950516-72d8-4913-aef3-320851fd6984",
+      "id" : "6465917d-f86a-43e3-80f8-d6ebc8d764b9",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "689b9b04-c6d6-4eaa-a052-2c0d368a8813",
+      "id" : "827347eb-a349-4b89-af2c-0981038da350",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
@@ -924,17 +634,13 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.paciente && $data.agendamento ){",
+        "if( $data.paciente ){",
         "\treturn {",
         "\t\t//map paciente variable to expected task contract input",
         "\t\tpacienteInput: {",
         "\t\t\tcpf: $data.paciente.cpf !== undefined ? $data.paciente.cpf : null,",
         "\t\t\tnome: $data.paciente.nome !== undefined ? $data.paciente.nome : null,",
-        "\t\t\tprefHorario: $data.paciente.prefHorario !== undefined ? $data.paciente.prefHorario : null",
-        "\t\t},",
-        "\t\t//map agendamento variable to expected task contract input",
-        "\t\tagendamentoInput: {",
-        "\t\t\tpresencaConsulta: $data.presencaC == 'Sim' ? true : false,",
+        "\t\t\tsituacaoAtendimento: $data.paciente.situacaoAtendimento !== undefined ? $data.paciente.situacaoAtendimento : null",
         "\t\t}",
         "\t}",
         "}"
@@ -954,21 +660,10 @@
         "id"
       ],
       "exposed" : false
-    },
-    "agendamento" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.agendamento_ref.link}}"
-      ],
-      "exposed" : false
-    },
-    "presencaC" : {
-      "type" : "constant",
-      "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "7c5856b6-9874-4f99-9a5f-649e46829072",
+  "uuid" : "325f3b7a-1b60-458f-9dc9-79a3a1d934e5",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

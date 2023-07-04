@@ -98,7 +98,7 @@ function PbButtonCtrl($scope, $http, $location, $log, $window, localStorageServi
       url: url,
       data: angular.copy($scope.properties.dataToSend),
       params: params
-    };
+    };s
 
     return $http(req)
       .success(function(data, status) {

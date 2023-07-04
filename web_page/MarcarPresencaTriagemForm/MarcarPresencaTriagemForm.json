@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "MarcarPresencaTriagemForm",
   "name" : "MarcarPresencaTriagemForm",
-  "lastUpdate" : 1687743105889,
+  "lastUpdate" : 1687828077486,
   "rows" : [
     [
       {
@@ -643,56 +643,128 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
                         "xs" : 12,
-                        "lg" : 12
+                        "sm" : 12,
+                        "md" : 6,
+                        "lg" : 6
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
                         "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Presenca Triagem"
+                          "value" : "Paciente Presente?"
                         },
-                        "dimension" : {
+                        "labelPosition" : {
                           "type" : "constant",
-                          "value" : 12
+                          "value" : "top"
                         },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "agendamento.presencaTriagem"
-                        },
-                        "required" : {
+                        "labelWidth" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : 4
                         },
-                        "allowHTML" : {
+                        "inline" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "availableValues" : {
+                          "type" : "constant",
+                          "value" : [
+                            "Sim",
+                            "Não"
+                          ]
+                        },
+                        "displayedKey" : {
+                          "type" : "constant"
+                        },
+                        "returnedKey" : {
+                          "type" : "expression"
+                        },
+                        "selectedValue" : {
+                          "type" : "variable",
+                          "value" : "presencaT"
                         }
                       },
-                      "reference" : "ffb00b02-4cad-47c0-a8df-d0d58958bfa3",
+                      "reference" : "7c789165-b31d-49d2-aa6d-71ab05ebd6c0",
                       "hasValidationError" : false,
-                      "id" : "pbCheckbox",
-                      "description" : ""
+                      "id" : "pbRadioButtons"
                     }
                   ]
                 ]
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "{{bool}}"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "5c84d60b-f02f-44ae-8f34-2510709d3aca",
+                "hasValidationError" : false,
+                "id" : "pbText"
               }
             ],
             [
@@ -914,7 +986,7 @@
         "\t\t},",
         "\t\t//map agendamento variable to expected task contract input",
         "\t\tagendamentoInput: {",
-        "\t\t\tpresencaTriagem: $data.agendamento.presencaTriagem !== undefined ? $data.agendamento.presencaTriagem : null",
+        "\t\t\tpresencaTriagem: $data.presencaT == \"Sim\" ? true : false ",
         "\t\t}",
         "\t}",
         "}"
@@ -940,6 +1012,23 @@
       "value" : [
         "../{{context.agendamento_ref.link}}"
       ],
+      "exposed" : false
+    },
+    "bool" : {
+      "type" : "expression",
+      "value" : [
+        "var res;",
+        "",
+        "if ($data.presencaT == \"Sim\"){",
+        "    $data.bool = true;",
+        "} else{",
+        "    $data.bool = false;",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "presencaT" : {
+      "type" : "constant",
       "exposed" : false
     }
   },

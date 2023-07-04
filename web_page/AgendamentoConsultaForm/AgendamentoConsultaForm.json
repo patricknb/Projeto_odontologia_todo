@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "AgendamentoConsultaForm",
   "name" : "AgendamentoConsultaForm",
-  "lastUpdate" : 1687743157525,
+  "lastUpdate" : 1687832862864,
   "rows" : [
     [
       {
@@ -825,7 +825,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "allowHTML" : {
                           "type" : "constant",

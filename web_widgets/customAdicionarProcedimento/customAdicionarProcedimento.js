@@ -107,7 +107,7 @@
       url: url,
       data: angular.copy($scope.properties.dataToSend),
       params: params
-    };
+    };s
 
     return $http(req)
       .success(function(data, status) {
