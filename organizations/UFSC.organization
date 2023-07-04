@@ -134,7 +134,7 @@
     </membership>
     <membership>
       <userName>Paula.Braga</userName>
-      <roleName>ChefeSetor</roleName>
+      <roleName>TécnicoAdministrativo</roleName>
       <groupName>SeRCaP</groupName>
       <groupParentPath>/OdontoUFSC</groupParentPath>
     </membership>
@@ -229,6 +229,18 @@
     </membership>
     <membership>
       <userName>Adm</userName>
+      <roleName>Aluno</roleName>
+      <groupName>EquipeTriagem</groupName>
+      <groupParentPath>/OdontoUFSC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Paula.Braga</userName>
+      <roleName>ChefeSetor</roleName>
+      <groupName>SeRCaP</groupName>
+      <groupParentPath>/OdontoUFSC</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Aluno.T2</userName>
       <roleName>Aluno</roleName>
       <groupName>EquipeTriagem</groupName>
       <groupParentPath>/OdontoUFSC</groupParentPath>

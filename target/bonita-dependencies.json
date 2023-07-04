@@ -10,7 +10,7 @@
       "groupId" : "org.bonitasoft.connectors",
       "artifactId" : "bonita-connector-rest",
       "version" : "1.3.1",
-      "file" : "C:\\Users\\patri\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
+      "file" : "C:\\Users\\rzanatta\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
     },
     "jarEntry" : "rest-post.impl"
   }, {
@@ -24,7 +24,7 @@
       "groupId" : "org.bonitasoft.connectors",
       "artifactId" : "bonita-connector-rest",
       "version" : "1.3.1",
-      "file" : "C:\\Users\\patri\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
+      "file" : "C:\\Users\\rzanatta\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
     },
     "jarEntry" : "rest-file-put.impl"
   }, {
@@ -38,7 +38,7 @@
       "groupId" : "org.bonitasoft.connectors",
       "artifactId" : "bonita-connector-rest",
       "version" : "1.3.1",
-      "file" : "C:\\Users\\patri\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
+      "file" : "C:\\Users\\rzanatta\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
     },
     "jarEntry" : "rest-put.impl"
   }, {
@@ -52,7 +52,7 @@
       "groupId" : "org.bonitasoft.connectors",
       "artifactId" : "bonita-connector-rest",
       "version" : "1.3.1",
-      "file" : "C:\\Users\\patri\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
+      "file" : "C:\\Users\\rzanatta\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
     },
     "jarEntry" : "rest-get.impl"
   }, {
@@ -66,7 +66,7 @@
       "groupId" : "org.bonitasoft.connectors",
       "artifactId" : "bonita-connector-rest",
       "version" : "1.3.1",
-      "file" : "C:\\Users\\patri\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
+      "file" : "C:\\Users\\rzanatta\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
     },
     "jarEntry" : "rest-delete.impl"
   }, {
@@ -80,7 +80,7 @@
       "groupId" : "org.bonitasoft.connectors",
       "artifactId" : "bonita-connector-rest",
       "version" : "1.3.1",
-      "file" : "C:\\Users\\patri\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
+      "file" : "C:\\Users\\rzanatta\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
     },
     "jarEntry" : "rest-head.impl"
   }, {
@@ -94,7 +94,7 @@
       "groupId" : "org.bonitasoft.connectors",
       "artifactId" : "bonita-connector-rest",
       "version" : "1.3.1",
-      "file" : "C:\\Users\\patri\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
+      "file" : "C:\\Users\\rzanatta\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
     },
     "jarEntry" : "rest-file-post.impl"
   }, {
@@ -108,7 +108,7 @@
       "groupId" : "org.bonitasoft.connectors",
       "artifactId" : "bonita-connector-email",
       "version" : "1.3.0",
-      "file" : "C:\\Users\\patri\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-email\\1.3.0\\bonita-connector-email-1.3.0.jar"
+      "file" : "C:\\Users\\rzanatta\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-email\\1.3.0\\bonita-connector-email-1.3.0.jar"
     },
     "jarEntry" : "email.impl"
   } ],
@@ -123,7 +123,7 @@
       "groupId" : "org.bonitasoft.actorfilter",
       "artifactId" : "bonita-actorfilter-initiator",
       "version" : "1.0.0",
-      "file" : "C:\\Users\\patri\\.m2\\repository\\org\\bonitasoft\\actorfilter\\bonita-actorfilter-initiator\\1.0.0\\bonita-actorfilter-initiator-1.0.0.jar"
+      "file" : "C:\\Users\\rzanatta\\.m2\\repository\\org\\bonitasoft\\actorfilter\\bonita-actorfilter-initiator\\1.0.0\\bonita-actorfilter-initiator-1.0.0.jar"
     },
     "jarEntry" : "bonita-actorfilter-initiator.impl"
   } ],
@@ -134,7 +134,7 @@
       "groupId" : "org.bonitasoft.connectors",
       "artifactId" : "bonita-connector-rest",
       "version" : "1.3.1",
-      "file" : "C:\\Users\\patri\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
+      "file" : "C:\\Users\\rzanatta\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
     },
     "jarEntry" : "rest-file-put.def"
   }, {
@@ -144,7 +144,7 @@
       "groupId" : "org.bonitasoft.connectors",
       "artifactId" : "bonita-connector-rest",
       "version" : "1.3.1",
-      "file" : "C:\\Users\\patri\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
+      "file" : "C:\\Users\\rzanatta\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
     },
     "jarEntry" : "rest-get.def"
   }, {
@@ -154,7 +154,7 @@
       "groupId" : "org.bonitasoft.connectors",
       "artifactId" : "bonita-connector-rest",
       "version" : "1.3.1",
-      "file" : "C:\\Users\\patri\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
+      "file" : "C:\\Users\\rzanatta\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
     },
     "jarEntry" : "rest-head.def"
   }, {
@@ -164,7 +164,7 @@
       "groupId" : "org.bonitasoft.connectors",
       "artifactId" : "bonita-connector-rest",
       "version" : "1.3.1",
-      "file" : "C:\\Users\\patri\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
+      "file" : "C:\\Users\\rzanatta\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
     },
     "jarEntry" : "rest-delete.def"
   }, {
@@ -174,7 +174,7 @@
       "groupId" : "org.bonitasoft.connectors",
       "artifactId" : "bonita-connector-rest",
       "version" : "1.3.1",
-      "file" : "C:\\Users\\patri\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
+      "file" : "C:\\Users\\rzanatta\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
     },
     "jarEntry" : "rest-put.def"
   }, {
@@ -184,7 +184,7 @@
       "groupId" : "org.bonitasoft.connectors",
       "artifactId" : "bonita-connector-rest",
       "version" : "1.3.1",
-      "file" : "C:\\Users\\patri\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
+      "file" : "C:\\Users\\rzanatta\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
     },
     "jarEntry" : "rest-post.def"
   }, {
@@ -194,7 +194,7 @@
       "groupId" : "org.bonitasoft.connectors",
       "artifactId" : "bonita-connector-rest",
       "version" : "1.3.1",
-      "file" : "C:\\Users\\patri\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
+      "file" : "C:\\Users\\rzanatta\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-rest\\1.3.1\\bonita-connector-rest-1.3.1.jar"
     },
     "jarEntry" : "rest-file-post.def"
   }, {
@@ -204,7 +204,7 @@
       "groupId" : "org.bonitasoft.connectors",
       "artifactId" : "bonita-connector-email",
       "version" : "1.3.0",
-      "file" : "C:\\Users\\patri\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-email\\1.3.0\\bonita-connector-email-1.3.0.jar"
+      "file" : "C:\\Users\\rzanatta\\.m2\\repository\\org\\bonitasoft\\connectors\\bonita-connector-email\\1.3.0\\bonita-connector-email-1.3.0.jar"
     },
     "jarEntry" : "email.def"
   } ],
@@ -215,7 +215,7 @@
       "groupId" : "org.bonitasoft.actorfilter",
       "artifactId" : "bonita-actorfilter-initiator",
       "version" : "1.0.0",
-      "file" : "C:\\Users\\patri\\.m2\\repository\\org\\bonitasoft\\actorfilter\\bonita-actorfilter-initiator\\1.0.0\\bonita-actorfilter-initiator-1.0.0.jar"
+      "file" : "C:\\Users\\rzanatta\\.m2\\repository\\org\\bonitasoft\\actorfilter\\bonita-actorfilter-initiator\\1.0.0\\bonita-actorfilter-initiator-1.0.0.jar"
     },
     "jarEntry" : "bonita-actorfilter-initiator.def"
   } ],

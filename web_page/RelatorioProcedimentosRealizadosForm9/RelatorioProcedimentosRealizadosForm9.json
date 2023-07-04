@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "RelatorioProcedimentosRealizadosForm9",
   "name" : "RelatorioProcedimentosRealizadosForm",
-  "lastUpdate" : 1687743404096,
+  "lastUpdate" : 1687832995877,
   "rows" : [
     [
       {
@@ -1003,7 +1003,8 @@
         "\t\tpacienteInput: {",
         "\t\t\tcpf: $data.paciente.cpf !== undefined ? $data.paciente.cpf : null,",
         "\t\t\tnome: $data.paciente.nome !== undefined ? $data.paciente.nome : null,",
-        "\t\t\tprocedimentosRealizados: $data.paciente.procedimentosRealizados !== undefined ? $data.relatorioProcedimentos : null",
+        "\t\t\tprocedimentosRealizados: $data.paciente.procedimentosRealizados !== undefined ? $data.relatorioProcedimentos : null,",
+        "\t\t\tsituacaoAtendimento: $data.paciente.situacaoAtendimento !== undefined ?  $data.paciente.situacaoAtendimento : null",
         "\t\t}",
         "\t}",
         "}"

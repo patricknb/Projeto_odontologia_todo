@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "MarcarPresencaConsultaForm",
   "name" : "MarcarPresencaConsultaForm",
-  "lastUpdate" : 1687743259817,
+  "lastUpdate" : 1687832897344,
   "rows" : [
     [
       {
@@ -649,47 +649,67 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "labelHidden" : {
+                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : ""
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
                         "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Presenca Consulta"
+                          "value" : "Paciente presente na Consulta?"
                         },
-                        "dimension" : {
+                        "labelPosition" : {
                           "type" : "constant",
-                          "value" : 12
+                          "value" : "top"
                         },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "agendamento.presencaConsulta"
-                        },
-                        "required" : {
+                        "labelWidth" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : 4
                         },
-                        "allowHTML" : {
+                        "inline" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "availableValues" : {
+                          "type" : "constant",
+                          "value" : [
+                            "Sim",
+                            "Não"
+                          ]
+                        },
+                        "displayedKey" : {
+                          "type" : "constant"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant"
+                        },
+                        "selectedValue" : {
+                          "type" : "variable",
+                          "value" : "presencaC"
                         }
                       },
-                      "reference" : "766dec82-675f-4f03-bae8-c71082d593a4",
+                      "reference" : "9828b734-2823-4ee0-bcca-4c983eede9a4",
                       "hasValidationError" : false,
-                      "id" : "pbCheckbox",
-                      "description" : ""
+                      "id" : "pbRadioButtons"
                     }
                   ]
                 ]
@@ -914,7 +934,7 @@
         "\t\t},",
         "\t\t//map agendamento variable to expected task contract input",
         "\t\tagendamentoInput: {",
-        "\t\t\tpresencaConsulta: $data.agendamento.presencaConsulta !== undefined ? $data.agendamento.presencaConsulta : null",
+        "\t\t\tpresencaConsulta: $data.presencaC == 'Sim' ? true : false,",
         "\t\t}",
         "\t}",
         "}"
@@ -940,6 +960,10 @@
       "value" : [
         "../{{context.agendamento_ref.link}}"
       ],
+      "exposed" : false
+    },
+    "presencaC" : {
+      "type" : "constant",
       "exposed" : false
     }
   },

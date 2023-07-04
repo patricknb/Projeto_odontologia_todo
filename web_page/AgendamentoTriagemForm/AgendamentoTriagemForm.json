@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.2",
   "id" : "AgendamentoTriagemForm",
   "name" : "AgendamentoTriagemForm",
-  "lastUpdate" : 1687743082902,
+  "lastUpdate" : 1687832921503,
   "rows" : [
     [
       {
@@ -837,7 +837,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "allowHTML" : {
                           "type" : "constant",
